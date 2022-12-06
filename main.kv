@@ -1,0 +1,53 @@
+#:include kv/homepage.kv
+#:include kv/ajustespage.kv
+#:include kv/mudarfotoperfilpage.kv
+#:include kv/produtospage.kv
+#:include kv/novaospage.kv
+#:include kv/acompanharospage.kv
+#:include kv/contatopage.kv
+
+#:import utils kivy.utils
+
+
+
+
+
+FloatLayout:
+    canvas:
+        Rectangle:
+            size: self.size
+            pos: self.pos
+
+            source:"icones/bg1.png"
+
+    Image:
+        pos_hint: {"right":1, "top": 1}
+        size_hint: 1, 0.25
+        source: "icones/AIROMPORT.jpg"
+        id: foto_perfil
+
+    ScreenManager:
+        pos_hint: {"right": 1, "top": 0.7}
+        size_hint: 1, 0.7
+        id: screen_manager
+        HomePage:
+            name: "homepage"
+            id: homepage
+        AjustesPage:
+            name: "ajustespage"
+            id: ajustespage
+        MudarFotoPerfilPage:
+            name: "mudarfotoperfilpage"
+            id: mudarfotoperfilpage
+        NovaOsPage:
+            name: "novaospage"
+            id: novaospage
+        AcompanharOsPage:
+            name: "acompanharospage"
+            id: acompanharospage
+        ProdutosPage:
+            name: "produtospage"
+            id: produtospage
+        ContatoPage:
+            name: "contatopage"
+            id: contatopage

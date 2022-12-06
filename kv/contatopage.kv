@@ -1,0 +1,40 @@
+<ContatoPage>:
+    FloatLayout:
+        canvas.before:
+
+
+
+        FloatLayout:
+            pos_hint: {"right": 1, "top": 0.12}
+            size_hint: 1, 0.12
+            canvas:
+                Color:
+                    rgb:utils.get_color_from_hex("#006D7E")
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+            ImageButton:
+                pos_hint: {"right": 0.2, "top": 0.9}
+                size_hint: 0.2,0.8
+                source:"icones/voltar.png"
+                on_release: app.mudar_tela("homepage")
+        Label:
+            text: "Segue nosso contato"
+            pos_hint:{"right": 1, "top": 1}
+            size_hint: 1, 0.20
+        Label:
+            text: "1194440-8507"
+            pos_hint:{"right": 0.75, "top": 0.50}
+            size_hint: 1, 0.20
+        Label:
+            text: "1198340-5832"
+            pos_hint:{"right": 0.75, "top": 0.50}
+            size_hint: 1, 0.35
+        Label:
+            text: "contatorcamento@airomport.com.br"
+            pos_hint:{"right": 0.75, "top": 0.50}
+            size_hint: 1, 0.50
+        Label:
+            text: "www.airomport.com.br"
+            pos_hint:{"right": 0.75, "top": 0.50}
+            size_hint: 1, 0.65
