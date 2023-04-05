@@ -1,1 +1,1 @@
-Aplicativo criado com Phyton na biblioteca Kivy;
+Aplicativo criado com Python na biblioteca Kivy;
